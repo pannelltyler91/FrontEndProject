@@ -1,5 +1,7 @@
 body{
-    color:blue;
+  background: rgb(233, 232, 232);
+  background: radial-gradient(circle, rgba(88, 227, 236, 0.993) 0%, rgba(216,148,233,1) 100%);
+
 }
 
 .card-wrapper {
@@ -84,7 +86,19 @@ body{
   .card:hover .card-content {
     bottom: 0;
   }
-  body {
-    margin: 0;
-    background-image: linear-gradient(to right, #ECE9E6 , #FFFFFF);
+ 
+
+  #searchButton{
+    background-color:rgba(88, 227, 236, 0.993); 
+    color:violet; 
+    font-weight:bold;
+    border:none;
+  }
+
+  #neon {
+    background-image: url(./neon_tokyo2.jpg);
+     background-size: 385px 400px;
+      background-attachment:scroll; 
+      height:100px;
+      align-items:center;
   }
