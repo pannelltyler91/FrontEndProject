@@ -189,3 +189,15 @@ body{
           height:100px;
           align-items:center;
       }
+
+      img.card-img-top{
+        height:498px;
+      }
+
+      #intro{
+        font-family: 'Rock Salt', cursive;
+        color:violet;
+        font-size: 3vw;
+        line-height: 3vw;
+        text-shadow: 0 0 3vw #2356FF;
+      }
