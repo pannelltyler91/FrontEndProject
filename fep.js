@@ -28,7 +28,7 @@ $('#searchButton').click(function(e){
                                <p class="card-text">Amount of episodes:${value.episodes}</p>
                                <p class="card-text">Score:${value.score}</p>
                                <p class="card-text">Synopsis:${value.synopsis}</p>
-                               <a href="#" class="btn btn-primary" id="goToReviews">See Reviews</a>
+                               <button onclick='goToReview()'class="btn btn-primary" id="goToReviews">See Reviews</button>
                            </div>
                        </div>
                    </div>
@@ -43,10 +43,26 @@ $('#searchButton').click(function(e){
                 $('#searchBar').val('');
                 
             }   
-
+            
         });
 
     });
+
+    function goToReview(){
+        $.ajax({
+            type:'GET',
+            url:'https://api.jikan.moe/v3/anime/20583/reviews',
+            success:function(data){  
+                console.log(data.reviews);
+                let naruto = data.reviews.slice(0,1);
+                $.each(naruto,function(index,value){
+                    console.log(value.content);
+                })
+            }
+
+    })
+
+};
 
     
   
