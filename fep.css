@@ -222,6 +222,7 @@ body{
   backdrop-filter: blur(2px);
 }
     
+foundations
     
 
       img.card-img-top{
@@ -235,3 +236,6 @@ body{
         line-height: 3vw;
         text-shadow: 0 0 3vw #2356FF;
       }
+
+    
+main
