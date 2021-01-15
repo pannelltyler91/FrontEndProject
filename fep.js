@@ -28,7 +28,7 @@ $('#searchButton').click(function(e){
                                <p class="card-text">Amount of episodes:${value.episodes}</p>
                                <p class="card-text">Score:${value.score}</p>
                                <p class="card-text">Synopsis:${value.synopsis}</p>
-                               <button onclick='goToReview()'class="btn btn-primary" id="goToReviews">See Reviews</button>
+                               <button type='button' onclick='goToReview()'class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">See Reviews</button>
                            </div>
                        </div>
                    </div>
@@ -55,14 +55,24 @@ $('#searchButton').click(function(e){
             success:function(data){  
                 console.log(data.reviews);
                 let naruto = data.reviews.slice(0,1);
+                popUpBody = '';
                 $.each(naruto,function(index,value){
                     console.log(value.content);
+                   
+                   popUpBody = 
+                   `<p class='popUp>${value.content}</p>`;
+            
+
                 })
+                 $('.modal-body').append(popUpBody);
             }
+            
+        })
+       
+    }
 
-    })
 
-};
+
 
     
   
