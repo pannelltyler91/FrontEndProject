@@ -4,6 +4,23 @@ body{
   animation: gradient 15s ease infinite;
 }
 
+img.card-img-top{
+  height:498px;
+}
+
+#neon {
+  background-image: url(./neon_tokyo2.jpg);
+   background-size: 385px 400px;
+   border-radius: 20px;
+    background-attachment:scroll; 
+    height:100px;
+    align-items:center;
+}
+
+.col-12 {
+  backdrop-filter: blur(2px);
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -77,6 +94,18 @@ body{
       text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
       color: #146C80;
     }
+  }
+
+  #intro{
+    font-family: 'Bowlby One SC', cursive;
+    -webkit-text-stroke:2px black;
+    color:rgb(211, 175, 214);
+    font-size: 2vw;
+    line-height: 2.2vw;
+    text-shadow: 0 0 3vw #2356FF;
+    width:83%;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .d-flex {
@@ -239,36 +268,15 @@ body{
   
   
   
-    #neon {
-        background-image: url(./neon_tokyo2.jpg);
-         background-size: 385px 400px;
-         border-radius: 20px;
-          background-attachment:scroll; 
-          height:100px;
-          align-items:center;
-    }
-.col-12 {
-  backdrop-filter: blur(2px);
-}
+ 
+
     
 
     
 
-      img.card-img-top{
-        height:498px;
-      }
+     
 
-      #intro{
-        font-family: 'Bowlby One SC', cursive;
-        -webkit-text-stroke:2px black;
-        color:rgb(211, 175, 214);
-        font-size: 2vw;
-        line-height: 2.2vw;
-        text-shadow: 0 0 3vw #2356FF;
-        width:83%;
-        margin-left:auto;
-        margin-right:auto;
-      }
+     
 
     
 
