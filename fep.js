@@ -28,7 +28,7 @@ $('#searchButton').click(function(e){
                                <p class="card-text">Amount of episodes:${value.episodes}</p>
                                <p class="card-text">Score:${value.score}</p>
                                <p class="card-text">Synopsis:${value.synopsis}</p>
-                               <button type='button' onclick='goToReview()'class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">See Reviews</button>
+                               <button type='button' onclick='goToReview()'class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">See Reviews</button>
                            </div>
                        </div>
                    </div>
@@ -64,7 +64,7 @@ $('#searchButton').click(function(e){
             
 
                 })
-                 $('.modal-body').append(popUpBody);
+                 $('.modal-body').html(popUpBody);
             }
             
         })
