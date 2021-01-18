@@ -59,12 +59,11 @@ $('#searchButton').click(function(e){
                 $.each(naruto,function(index,value){
                     console.log(value.content);
                    
-                   popUpBody = 
-                   `<p class='popUp>${value.content}</p>`;
+                   
             
-
+                   $('.modal-body').html(value.content);
                 })
-                 $('.modal-body').html(popUpBody);
+                 
             }
             
         })
