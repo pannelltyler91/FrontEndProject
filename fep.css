@@ -4,6 +4,23 @@ body{
   animation: gradient 15s ease infinite;
 }
 
+img.card-img-top{
+  height:498px;
+}
+
+#neon {
+  background-image: url(./neon_tokyo2.jpg);
+   background-size: 385px 400px;
+   border-radius: 20px;
+    background-attachment:scroll; 
+    height:100px;
+    align-items:center;
+}
+
+.col-12 {
+  backdrop-filter: blur(2px);
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -78,6 +95,47 @@ body{
       color: #146C80;
     }
   }
+
+  #intro{
+    font-family: 'Bowlby One SC', cursive;
+    -webkit-text-stroke:2px black;
+    color:rgb(211, 175, 214);
+    font-size: 2vw;
+    line-height: 2.2vw;
+    text-shadow: 0 0 3vw #2356FF;
+    width:83%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .d-flex {
+    display: flex!important;
+    justify-content: center;
+  }
+
+  #searchBar {
+    width: 75%;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    min-height: 38px;
+    margin-bottom: 40px;
+  }
+   #searchButton {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: none;
+    margin: 0 0.3em 0.3em 0;
+    margin-bottom: 40px;
+    border-radius: 5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Bowlby One SC',sans-serif;
+    font-weight: 300;
+    color: white;
+    background: black;
+    text-align: center;
+   }
  
   
     .card-wrapper {
@@ -112,7 +170,7 @@ body{
       display: inline-block;
       position: relative;
       overflow: hidden;
-      min-height: 400px;
+      min-height: 250px;
       height: 100%;
     }
     .card:hover {
@@ -141,7 +199,7 @@ body{
     
     .card-body {
       color: white;
-      font-family: 'Rock Salt', cursive;
+      font-family: 'Bowlby One SC', cursive;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -152,7 +210,7 @@ body{
     }
     .card-content {
       color:white;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Oswald', sans-serif;
       left: 0;
       right: 0;
       overflow: hidden;
@@ -178,7 +236,7 @@ body{
       box-sizing: border-box;
       text-decoration:none;
       text-transform:lowercase;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+      font-family: 'Oswald', sans-serif !important;
       font-weight:400;
       color:#FFFFFF;
       background: none !important;
@@ -210,28 +268,15 @@ body{
   
   
   
-    #neon {
-        background-image: url(./neon_tokyo2.jpg);
-         background-size: 385px 400px;
-         border-radius: 20px;
-          background-attachment:scroll; 
-          height:100px;
-          align-items:center;
-    }
-.col-12 {
-  backdrop-filter: blur(2px);
-}
-    
+ 
+
     
 
-      img.card-img-top{
-        height:498px;
-      }
+    
 
-      #intro{
-        font-family: 'Rock Salt', cursive;
-        color:violet;
-        font-size: 3vw;
-        line-height: 3vw;
-        text-shadow: 0 0 3vw #2356FF;
-      }
+     
+
+     
+
+    
+
