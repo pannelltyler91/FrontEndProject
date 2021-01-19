@@ -260,7 +260,10 @@ img.card-img-top{
       }
     }
 
-  
+  .modal-body,.modal-header, .modal-footer{
+    color:white;
+    background-color: black;
+  }
    
   
     
