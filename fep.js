@@ -2,7 +2,7 @@
 
 $('#searchButton').click(function(e){
     e.preventDefault();
-    var searchInput = $('#searchBar').val();
+    var searchInput = $('#searchBar').val()    
      $.ajax({
          type:'GET',
          url:'https://api.jikan.moe/v3/search/anime?q='+searchInput,
@@ -12,6 +12,7 @@ $('#searchButton').click(function(e){
              let output = '';
              $.each(superSaiyan,function(index,value){
                console.log(value);
+              
                    
                      output += 
                        `
@@ -24,11 +25,13 @@ $('#searchButton').click(function(e){
                        </div>
                        <div class="card-body">
                            <h5 class="card-title">${value.title}</h5>
+                           <br>
+                           <br>
                            <div class="card-content">
                                <p class="card-text">Amount of episodes:${value.episodes}</p>
                                <p class="card-text">Score:${value.score}</p>
-                               <p class="card-text">Synopsis:${value.synopsis}</p>
-                               <button type='button' onclick='goToReview()'class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">See Reviews</button>
+                               <button class="card-text" id='synop' type='button'onclick='display()' data-toggle="modal" data-target="#exampleModalLong">Synopsis</button>
+                               <button type='button' onclick='goToReview()'class="btn btn-primary" >See Reviews</button>
                            </div>
                        </div>
                    </div>
@@ -36,14 +39,22 @@ $('#searchButton').click(function(e){
             </div>
         </div>
                    `;
+                
                  
                 
                 });
                 $('#animeResults').html(output);
                 $('#searchBar').val('');
                 
-            }   
-            
+                
+            },
+            error:function(xhr,ajaxOptions,thrownError){
+                if(jqXHR.status == 404 || thrownError == 'Not Found'){
+                        $('#animeResults').html(`<img src='texas9000.jpg'>`);
+                    }
+                }
+              
+               
         });
 
     });
@@ -54,7 +65,7 @@ $('#searchButton').click(function(e){
             url:'https://api.jikan.moe/v3/anime/20583/reviews',
             success:function(data){  
                 console.log(data.reviews);
-                let naruto = data.reviews.slice(0,1);
+                let naruto = data.reviews;
                 popUpBody = '';
                 $.each(naruto,function(index,value){
                     console.log(value.content);

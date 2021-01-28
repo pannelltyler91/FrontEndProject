@@ -220,14 +220,16 @@ img.card-img-top{
     }
     .card:hover .card-body {
       height: 80%;
+      
     }
     .card:hover .card-content {
       bottom: 0;
+      padding:2px;
     }
 
-    .btn-primary{
+    .btn-primary,#synop{
       display:inline-block;
-      padding:0.5em 3em;
+      padding:5px;
       border-bottom: none !important;
       border-left: 1px solid rgb(8, 72, 167) !important;
       border-right: 1px solid rgb(8, 72, 167) !important;
@@ -266,11 +268,24 @@ img.card-img-top{
   }
    
   
+  #synop:hover{
+    color: rgb(3, 3, 3) !important;
+    background: rgb(194, 70, 194) !important;
+    transition-duration: .20s;
+  }
+  
+  
+  #synop:active{
+    color: rgb(19, 48, 146);
     
-    
-  
-  
-  
+  }
+
+  #synop{
+    border-radius: 5px;
+    height:36;
+    width:92.95;
+    padding:5px;
+  }
  
 
     
