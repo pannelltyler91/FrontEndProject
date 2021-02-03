@@ -113,7 +113,7 @@ img.card-img-top{
     justify-content: center;
   }
 
-  #searchBar {
+  /*#searchBar {
     width: 75%;
     border-radius: 20px;
     background: black;
@@ -135,7 +135,7 @@ img.card-img-top{
     color: white;
     background: black;
     text-align: center;
-   }
+   }*/
  
   
     .card-wrapper {
@@ -286,6 +286,10 @@ img.card-img-top{
     width:92.95;
     padding:5px;
   }
+ #navBar1{
+   background:rgb(60, 119, 228);
+   border-radius:5px;
+ }
  
 
     
